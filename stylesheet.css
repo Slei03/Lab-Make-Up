@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    margin: auto;
+}
+.calculator{
+    padding: 100px;
+}
+
+.calculator select{
+    margin: 20px;
+}
+
+.calculator button{
+    margin: 20px;
+}

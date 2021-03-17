@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Error Handling Calculator</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <script src="main.js" type="text/javascript"></script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+        window.TrackJS && TrackJS.install({ 
+            token: "c833bb0098cf4e06903b29cd821ed14b"
+        });
+    </script>                
+</header>
+<body>
+    <div class="calculator">
+        <label for="firstNum">First Number</label>
+        <input id="firstNum" name="firstNum"></input>
+        <select name="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        <label for="secondNum">Second Number</label>
+        <input id="secondNum" name="secondNum"></input>
+        <button onclick="calculate()">Calculate</button>
+        <text id="output"></text>
+    </div>
+    <div class="buttons"> 
+        <button onclick="consoleLogDemo()">Console Log Demo</button>
+        <button onclick="consoleErrorDemo()">Console Error Demo</button>
+        <button onclick="consoleDir()">Console Dir</button>
+        <button onclick="consoleDirxml()">Console dirxml</button>
+        <button onclick="consoleError()">Console error</button>
+        <button onclick="consoleGroupStart()">Console Group Start</button>
+        <button onclick="consoleGroupEnd()">Console Group End</button>
+        <button onclick="consoleTable()">Console Table</button>
+        <button onclick="startTimer()">Start Timer</button>
+        <button onclick="endTimer()">End Timer</button>
+        <button onclick="consoleTrace()">Console Trace</button>
+        <button onclick="globalError()">Trigger a Global Error</button>
+        <button onclick="clearConsole()">Clear Console</button>
+
+    </div>
+</body>
+</html>
